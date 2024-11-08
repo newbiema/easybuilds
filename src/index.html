@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CuyJoki</title>
+    <title>Easy Builds</title>
     <link href="css/output.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/plugin.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailgrids@2.2.2/assets/css/tailwind.min.css"rel="stylesheet"/>
-    <script defer
-    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
 </head>
 <body>
@@ -124,7 +124,7 @@ class="relative bg-white dark:bg-dark pt-[120px] pb-[110px] lg:pt-[150px]"
                <h6
                   class="flex items-center mb-6 text-xs font-normal text-body-color dark:text-dark-6"
                   >
-                  Some Of Our Clients
+                  Dipercayai Oleh :
                   <span class="inline-block w-8 h-px ml-3 bg-body-color"></span>
                </h6>
                <div class="flex items-center gap-4 xl:gap-[50px]">
@@ -154,10 +154,10 @@ class="relative bg-white dark:bg-dark pt-[120px] pb-[110px] lg:pt-[150px]"
       <div class="w-full px-4 lg:w-6/12">
          <div class="lg:ml-auto lg:text-right">
             <div class="relative z-10 inline-block pt-11 lg:pt-0">
-               <img
+               <img data-aos ="fade-up"
                   src="./img/Hero.jpg"
                   alt="hero"
-                  class="max-w-full rounded-xl lg:ml-auto"
+                  class="max-w-full rounded-xl lg:ml-auto "
                   />
                <span class="absolute -left-8 -bottom-8 z-[-1]">
                   <svg
@@ -214,16 +214,16 @@ inactiveClasses: 'text-body-color dark:text-dark-6 hover:bg-primary hover:text-w
 "
 class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
 >
-<div class="container mx-auto">
+<div class="container mx-auto ">
    <div class="text-center mb-[60px] max-w-[510px] mx-auto">
-      <span class="text-primary text-lg font-semibold block mb-2" id="product">
+      <span class="text-primary text-lg font-semibold block mb-2 " id="product">
          Produk dan Layanan Kami
       </span>
       <h2 class="text-dark dark:text-white text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px] mb-3">
-         Solusi Terbaik dari Cuy Joki
+         Solusi Terbaik dari Easy Builds
       </h2>
       <p class="text-body-color text-base dark:text-dark-6">
-         Kami menawarkan berbagai produk dan layanan unggulan yang siap membantu Anda menghadapi tantangan akademis dan profesional. Mulai dari jasa penulisan artikel dan makalah berkualitas, pembuatan presentasi PowerPoint yang memukau, hingga desain grafis yang menarik, semua dikerjakan dengan dedikasi tinggi oleh tim ahli kami.
+         Kami menawarkan berbagai produk dan layanan unggulan yang siap membantu Anda mewujudkan proyek konstruksi dan renovasi impian. Mulai dari layanan pembangunan rumah dan gedung berkualitas, perbaikan dan renovasi interior, hingga desain arsitektur yang fungsional dan estetis. Semua dikerjakan dengan dedikasi tinggi oleh tim ahli kami untuk hasil yang kokoh dan memuaskan.
       </p>
    </div>
 
@@ -231,25 +231,26 @@ class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
       <button @click="showCards = 'all'" :class="showCards == 'all' ? activeClasses : inactiveClasses" class="py-2 px-5 md:py-3 lg:px-8 rounded-lg text-base font-semibold transition">
          Semua Layanan
       </button>
-      <button @click="showCards = 'akademis'" :class="showCards == 'akademis' ? activeClasses : inactiveClasses" class="py-2 px-5 md:py-3 lg:px-8 rounded-lg text-base font-semibold transition">
-         Akademis
+      <button @click="showCards = 'perbaikan'" :class="showCards == 'perbaikan' ? activeClasses : inactiveClasses" class="py-2 px-5 md:py-3 lg:px-8 rounded-lg text-base font-semibold transition">
+         Layanan Perbaikan
       </button>
-      <button @click="showCards = 'kreatif digital'" :class="showCards == 'kreatif digital' ? activeClasses : inactiveClasses" class="py-2 px-5 md:py-3 lg:px-8 rounded-lg text-base font-semibold transition">
-         Kreatif Digital
+      <button @click="showCards = 'konstruksi'" :class="showCards == 'konstruksi' ? activeClasses : inactiveClasses" class="py-2 px-5 md:py-3 lg:px-8 rounded-lg text-base font-semibold transition">
+         Layanan Konstruksi
       </button>
    </div>
 
    <div class="flex flex-wrap -mx-4 justify-center">
-      <!-- Card 1: Akademis - Pembuatan Artikel dan Makalah -->
-      <div :class="showCards == 'all' || showCards == 'akademis' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
+      <!-- Card 1: Perbaikan - Jasa Pengecatan Profesional -->
+      <div :class="showCards == 'all' || showCards == 'perbaikan' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12" data-aos="fade-up-left">
          <div class="relative">
             <div class="overflow-hidden rounded-[10px]">
-               <img src="./img/2456469.jpg" alt="Pembuatan Artikel dan Makalah" class="w-full" />
+               <img src="img/tukang cat.jpg" alt="Pembuatan Artikel dan Makalah" class="w-full" />
             </div>
             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-               <span class="text-primary text-sm font-medium block mb-2">Akademis</span>
-               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Pembuatan Artikel dan Makalah</h3>
-               <p class="p-3 dark:text-white">Membuat artikel, makalah, atau tugas sekolah.</p>
+               <span class="text-primary text-sm font-medium block mb-2">Perbaikan</span>
+               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Jasa Pengecatan Profesional</h3>
+               <p class="p-3 dark:text-white">Layanan pengecatan untuk dinding, plafon, dan eksterior dengan hasil rapi dan warna yang tahan lama. Tim kami siap memberi tampilan segar pada properti Anda.
+               </p>
                <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa Pembuatan Artikel dan Makalah 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
                   Choose
                </a>
@@ -257,16 +258,16 @@ class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
          </div>
       </div>
 
-      <!-- Card 2: Kreatif Digital - Video Editing -->
-      <div :class="showCards == 'all' || showCards == 'kreatif digital' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
+      <!-- Card 2: Perbaikan - Spesialis Pemasangan Keramik -->
+      <div :class="showCards == 'all' || showCards == 'perbaikan' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
          <div class="relative">
             <div class="overflow-hidden rounded-[10px]">
-               <img src="./img/video editing.jpg" alt="Video Editing" class="w-full" />
+               <img src="img/tukang keramik.jpg" alt="Video Editing" class="w-full" />
             </div>
             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-               <span class="text-primary text-sm font-medium block mb-2">Kreatif Digital</span>
-               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Video Editing</h3>
-               <p class="p-3 dark:text-white">Mengedit atau membuat video animasi untuk keperluan presentasi, konten sosial media, atau tugas lainnya.</p>
+               <span class="text-primary text-sm font-medium block mb-2">Perbaikan</span>
+               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Spesialis Pemasangan Keramik</h3>
+               <p class="p-3 dark:text-white">Memasang keramik lantai dan dinding dengan presisi untuk hasil yang tahan lama dan estetis, sesuai keinginan Anda.</p>
                <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa Video Editing 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
                   Choose
                </a>
@@ -275,15 +276,15 @@ class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
       </div>
 
       <!-- Card 3: Kreatif Digital - Desain Grafis -->
-      <div :class="showCards == 'all' || showCards == 'kreatif digital' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
+      <div :class="showCards == 'all' || showCards == 'perbaikan' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12" data-aos="fade-up-right">
          <div class="relative">
             <div class="overflow-hidden rounded-[10px]">
-               <img src="./img/desain grafis.jpg" alt="Desain Grafis" class="w-full" />
+               <img src="img/tukang listrik.jpg" alt="Desain Grafis" class="w-full" />
             </div>
             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-               <span class="text-primary text-sm font-medium block mb-2">Kreatif Digital</span>
-               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Desain Grafis</h3>
-               <p class="p-3 dark:text-white">Membuat desain grafis seperti poster, brosur, logo, dan lain-lain.</p>
+               <span class="text-primary text-sm font-medium block mb-2">Perbaikan</span>
+               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Ahli Instalasi Listrik</h3>
+               <p class="p-3 dark:text-white">Instalasi dan perbaikan sistem kelistrikan untuk rumah dan kantor, dengan fokus pada keamanan dan efisiensi.</p>
                <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa pembuatan Desain Grafis 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
                   Choose
                </a>
@@ -291,33 +292,33 @@ class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
          </div>
       </div>
 
-      <!-- Card 4: Akademis - Cek Turnitin dan Parafrase -->
-      <div :class="showCards == 'all' || showCards == 'akademis' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
+      <!-- Card 4: Konstruksi - Cek Asisten Tukang Berpengalaman -->
+      <div :class="showCards == 'all' || showCards == 'konstruksi' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12" data-aos="fade-up-left">
          <div class="relative">
             <div class="overflow-hidden rounded-[10px]">
-               <img src="./img/Cek Turnitin.jpg" alt="Cek Turnitin dan Parafrase" class="w-full" />
+               <img src="img/Kuli Bangunan.jpg" alt="Asisten Tukang Berpengalaman" class="w-full" />
             </div>
             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-               <span class="text-primary text-sm font-medium block mb-2">Akademis</span>
-               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Cek Turnitin dan Parafrase</h3>
-               <p class="p-3 dark:text-white">Pengecekan plagiarisme pada skripsi dan mengubah kalimat atau paragraf agar lebih unik dan tidak terdeteksi plagiarisme.</p>
-               <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa Cek Turnitin dan Parafrase 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
+               <span class="text-primary text-sm font-medium block mb-2">Konstruksi</span>
+               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Asisten Tukang Berpengalaman</h3>
+               <p class="p-3 dark:text-white">Memberikan asisten tukang yang terlatih untuk membantu setiap aspek proyek konstruksi Anda, mulai dari pekerjaan ringan hingga dukungan teknis.</p>
+               <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa Asisten Tukang Berpengalaman 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
                   Choose
                </a>
             </div>
          </div>
       </div>
 
-      <!-- Card 5: Kreatif Digital - Resume/CV Writing -->
-      <div :class="showCards == 'all' || showCards == 'kreatif digital' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
+      <!-- Card 5: Konstruksi - Konstruksi Struktur Bangunan -->
+      <div :class="showCards == 'all' || showCards == 'konstruksi' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
          <div class="relative">
             <div class="overflow-hidden rounded-[10px]">
-               <img src="./img/Pembuatan Cv.jpg" alt="Resume/CV Writing" class="w-full" />
+               <img src="img/Struktur Bangunan.jpg" alt="Resume/CV Writing" class="w-full" />
             </div>
             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-               <span class="text-primary text-sm font-medium block mb-2">Kreatif Digital</span>
-               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Resume/CV Writing</h3>
-               <p class="p-3 dark:text-white">Membuat atau memperbaiki resume/CV, biasanya untuk keperluan melamar pekerjaan.</p>
+               <span class="text-primary text-sm font-medium block mb-2">Konstruksi</span>
+               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Konstruksi Struktur Bangunan</h3>
+               <p class="p-3 dark:text-white">Pengerjaan struktur bangunan seperti pondasi dan dinding oleh tukang batu profesional, memastikan kekuatan dan ketahanan bangunan.</p>
                <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa pembuatan CV/Resume 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
                   Choose
                </a>
@@ -325,16 +326,16 @@ class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
          </div>
       </div>
 
-      <!-- Card 6: Akademis - Tugas Umum -->
-      <div :class="showCards == 'all' || showCards == 'akademis' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12">
+      <!-- Card 6: Konstruksi - Layanan Plumbing dan Pipa -->
+      <div :class="showCards == 'all' || showCards == 'konstruksi' ? 'block' : 'hidden'" class="w-full px-4 md:w-1/2 xl:w-1/3 mb-12" data-aos="fade-up-right">
          <div class="relative">
             <div class="overflow-hidden rounded-[10px]">
-               <img src="img/Tugas Umum.jpg" alt="Tugas Umum" class="w-full" />
+               <img src="img/tukang pipa.jpg" alt="Tugas Umum" class="w-full" />
             </div>
             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-               <span class="text-primary text-sm font-medium block mb-2">Akademis</span>
-               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Tugas Umum</h3>
-               <p class="p-3 dark:text-white">Bantuan untuk menyelesaikan tugas sekolah dan kuliah.</p>
+               <span class="text-primary text-sm font-medium block mb-2">Konstruksi</span>
+               <h3 class="text-dark dark:text-white text-xl font-bold mb-5">Layanan Plumbing dan Pipa</h3>
+               <p class="p-3 dark:text-white">Instalasi dan perbaikan pipa air untuk rumah tangga dan bisnis, mengatasi berbagai masalah saluran air dengan solusi jangka panjang.</p>
                <a href="whatsapp://send?text=Hallo min saya ingin menggunakan jasa joki Tugas Umum 👋&phone=+6287892219615" class="inline-block py-[10px] px-7 text-sm font-medium border border-stroke dark:border-dark-3 rounded-md text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary transition hover:text-white">
                   Choose
                </a>
@@ -360,7 +361,7 @@ class="relative z-10 bg-white dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20"
                class="mb-6 inline-block max-w-[160px]"
                >
             <img
-               src="../img/logo.png"
+               src="img/logo.png"
                alt="logo"
                class="h-12"
                />
@@ -420,7 +421,7 @@ class="relative z-10 bg-white dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20"
                </a>
             </div>
             <p class="text-base text-body-color dark:text-dark-6">
-               &copy; 2024 || CuyJoki
+               &copy; 2024 || Easy Builds
             </p>
          </div>
       </div>
@@ -492,8 +493,14 @@ onclick="scrollToTop()"
 &#8679;
 </button>
 
- <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 <script src="./node_modules/preline/dist/preline.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+ </script>
+
+
 </body>
 </html>
