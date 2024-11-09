@@ -2684,6 +2684,11 @@ html {
     padding-bottom: 0.75rem;
   }
 
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .md\:text-\[40px\]{
     font-size: 40px;
   }
