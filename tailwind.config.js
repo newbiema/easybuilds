@@ -7,7 +7,11 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'], // Tambahkan font Poppins
+      },
+    },
   },
   plugins: [
     require('tailgrids/plugin'),
